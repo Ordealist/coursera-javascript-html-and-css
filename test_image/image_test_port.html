@@ -5,7 +5,7 @@
 <script language="javascript" type="text/javascript">
     function showTransit() {
     		console.log(document.getElementById("mapImg").src);
-    		if (document.getElementById("mapImg").src == "https://github.com/Ordealist/coursera-javascript-html-and-css/blob/main/test_image/brongdyu_city_map_road_only.png") {
+    		if (document.getElementById("mapImg").src == "brongdyu_city_map_road_only.png" {
     			document.getElementById("mapImg").src = "brongdyu_city_map_with_train_line.png";
     			console.log(document.getElementById("mapImg").src);
     			document.getElementById("default_button").style.borderColor = '#ffffff';
@@ -183,16 +183,7 @@
 			<img class="fixImage" id="default_button" onclick="showDefault()" src="default_button.png" alt="A button that shows a default map of a fictional city.">
 			<img class="fixImage" id="transit_button" onclick="showTransit()" src="publictransit_button.png" alt="A button that shows the user lines that delineate public transit routes.">	
 			<div class="interface interface_compass lock col-lg-4 col-md-6 col-sm-12 col-md-4 col-sm-4">
-				<img id="compass" src="compass_rose.png">
-			</div>
 
-			<div class="interface interface_scale lock col-lg-4 col-md-6 col-sm-12 col-md-4 col-sm-4">
-				<img src="scale_notext.png">
-			</div>
-
-			<div class="interface caption lock col-lg-4 col-md-6 col-sm-12 col-md-4 col-sm-4">
-				<p>4.8km/3mi</p>
-			</div>
 		</div>
 			<div id="dialogueBox" class="fixImage lock interface dialogue_box">
 				<div><button id="closeButton" onclick="hideDiv()" class="close_button">X</button></div>
@@ -224,7 +215,16 @@
 	<div id="phangwan_district" class="labels invisible_box default_style" onclick="showDiv3()"></div>
 	
 	<!--top layer interface things like compass rose and scale-->
+					<img id="compass" src="compass_rose.png">
+			</div>
 
+			<div class="interface interface_scale lock col-lg-4 col-md-6 col-sm-12 col-md-4 col-sm-4">
+				<img src="scale_notext.png">
+			</div>
+
+			<div class="interface caption lock col-lg-4 col-md-6 col-sm-12 col-md-4 col-sm-4">
+				<p>4.8km/3mi</p>
+			</div>
 </div>
 
 </html>
